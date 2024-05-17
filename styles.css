@@ -1,0 +1,96 @@
+body {
+  background-color: hsl(47, 88%, 63%);
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+
+  width: 85vw;
+  max-width: 400px;
+  height: 130vw;
+  max-height: 550px;
+
+  padding: 20px;
+  border: 2px solid hsl(0, 0%, 7%);
+  border-radius: 20px;
+
+  box-shadow: 9px 9px hsl(0, 0%, 7%);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+}
+
+main:hover {
+  box-shadow: 18px 18px hsl(0, 0%, 7%);
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.yellow {
+  background-color: hsl(47, 88%, 63%);
+  width: 5rem;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-top: 20px;
+  p {
+    font-weight: 800;
+  }
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+h1:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.grey {
+  color: hsl(0, 0%, 50%);
+  inline-size: 18rem;
+  line-height: 1.5rem;
+}
+
+.information {
+  position: absolute;
+  bottom: 24px;
+  width: 40%;
+  min-width: 200px;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  img {
+    height: 100%;
+    width: auto;
+    padding-right: 12px;
+  }
+
+  p {
+    font-weight: 800;
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    width: 75vw;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
